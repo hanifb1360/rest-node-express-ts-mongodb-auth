@@ -39,7 +39,7 @@ export const login = async (req: express.Request, res: express.Response) => {
     await user.save();
 
     // Setting the session token as a cookie and sending the user object as JSON response with 200 status code
-    res.cookie('ANTONIO-AUTH', user.authentication.sessionToken, {
+    res.cookie('HANIF-AUTH', user.authentication.sessionToken, {
       domain: 'localhost',
       path: '/',
     });
